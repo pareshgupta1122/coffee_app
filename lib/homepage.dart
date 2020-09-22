@@ -78,8 +78,8 @@ child: Text('Add Order'),
             itemBuilder: (context, i) {
               DocumentSnapshot testcrud = snapshot.data.documents[i];
               return ListTile(
-                title: Text(testcrud.data['Customer\'s name']??''),
-                subtitle: Text(testcrud.data['Type of Coffee']??''),
+                title: Text(testcrud.data['CustomerName']??''),
+                subtitle: Text(testcrud.data['thing']??''),
 
               );
             },
